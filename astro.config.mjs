@@ -14,7 +14,7 @@ export default defineConfig({
 				'./src/styles/custom.css',
 			],
 			social: {
-				github: 'https://github.com/withastro/starlight',
+				github: 'https://github.com/39sho/bootcamp2024-webfront',
 			},
 			sidebar: [
 				{
