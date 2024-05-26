@@ -19,3 +19,35 @@ https://developer.mozilla.org/ja/docs/Web/API/DocumentFragment
 const fuga = document.querySelector("#fuga");
 console.log(fuga);
 ```
+
+## 実行方法
+
+前の章では以下の実行方法を案内していましたが、今回は使えません。
+(DOM API はブラウザ用なのでブラウザ上で実行する要がある)
+
+```bash
+node hoge.js
+```
+
+なので今回は、以下の方法で実行してください。
+
+```html title="index.html"
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="main.css" rel="stylesheet" />
+        <script src="main.js" type="module"></script>
+    </head>
+    <body>
+        <div class="greeting">こんにちは、世界</div>
+    </body>
+</html>
+```
+
+```js title="main.js"
+console.log("こんにちは、世界");
+```
+
+```bash
+npx serve
+```
